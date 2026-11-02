@@ -14,8 +14,8 @@ export const RELATED_ROLES =
 
 // Ongeveer binnen bereik vanuit Utrecht. Dit is een handmatige indeling, geen reistijdberekening.
 export const PLACES_NEAR = ['Utrecht', 'Zeist', 'De Bilt', 'Bilthoven', 'Nieuwegein', 'Houten', 'IJsselstein', 'Vianen', 'Maarssen', 'Breukelen', 'Woerden', 'Driebergen', 'Bunnik', 'Vleuten', 'De Meern', 'Soesterberg', 'Den Dolder', 'Odijk', 'Werkhoven'];
-export const PLACES_WIDER = ['Amersfoort', 'Soest', 'Baarn', 'Veenendaal', 'Hilversum', 'Gouda', 'Culemborg', 'Doorn', 'Wijk bij Duurstede', 'Leusden', 'Rhenen', 'Montfoort', 'Mijdrecht', 'Bussum', 'Tiel', 'Leerdam', 'Austerlitz', 'Maartensdijk', 'Eemnes', 'Rivierenland'];
-export const PLACES_FAR = ['Amsterdam', 'Rotterdam', 'Den Haag', 'Eindhoven', 'Groningen', 'Zwolle', 'Arnhem', 'Nijmegen', 'Tilburg', 'Breda', 'Haarlem', 'Leiden', 'Dordrecht', 'Enschede', 'Apeldoorn', 'Maastricht', 'Almere', 'Alkmaar', "'s-Hertogenbosch", 'Den Bosch', 'Deventer', 'Leeuwarden', 'Assen', 'Emmen', 'Ede', 'Zoetermeer', 'Delft', 'Heerlen', 'Venlo', 'Roermond', 'Venray', 'Middelburg', 'Noord-Holland', 'Zuid-Holland', 'Gelderland', 'Limburg', 'Noord-Brabant', 'Zeeland', 'Overijssel', 'Drenthe', 'Friesland', 'Flevoland', 'Groenlo', 'Borculo', 'Winterswijk', 'Doetinchem', 'Lelystad', 'Hoofddorp'];
+export const PLACES_WIDER = ['Amersfoort', 'Soest', 'Baarn', 'Veenendaal', 'Hilversum', 'Gouda', 'Culemborg', 'Doorn', 'Wijk bij Duurstede', 'Leusden', 'Rhenen', 'Montfoort', 'Mijdrecht', 'Bussum', 'Tiel', 'Leerdam', 'Austerlitz', 'Maartensdijk', 'Eemnes', 'Rivierenland', 'Oudewater', 'Zaltbommel', 'Lopik', 'Schoonhoven', 'Naarden', 'Loosdrecht', 'Barneveld', 'Nijkerk'];
+export const PLACES_FAR = ['Amsterdam', 'Rotterdam', 'Den Haag', 'Eindhoven', 'Groningen', 'Zwolle', 'Arnhem', 'Nijmegen', 'Tilburg', 'Breda', 'Haarlem', 'Leiden', 'Dordrecht', 'Enschede', 'Apeldoorn', 'Maastricht', 'Almere', 'Alkmaar', "'s-Hertogenbosch", 'Den Bosch', 'Deventer', 'Leeuwarden', 'Assen', 'Emmen', 'Ede', 'Zoetermeer', 'Delft', 'Heerlen', 'Venlo', 'Roermond', 'Venray', 'Middelburg', 'Noord-Holland', 'Zuid-Holland', 'Gelderland', 'Limburg', 'Noord-Brabant', 'Zeeland', 'Overijssel', 'Drenthe', 'Friesland', 'Flevoland', 'Groenlo', 'Borculo', 'Winterswijk', 'Doetinchem', 'Lelystad', 'Hoofddorp', 'Sittard', 'Geleen', 'Halsteren', 'Hengelo', 'Almelo', 'Amstelveen', 'Oss', 'Zwijndrecht', 'Roosendaal', 'Bergen op Zoom', 'Harderwijk', 'Zutphen', 'Ruurlo', 'Hoorn', 'Purmerend', 'Zaandam', 'Alphen aan den Rijn', 'Helmond'];
 
 export const AUDIENCE_RULES = [
   ['jonge kinderen', /kleuter|onderbouw|jonge kind|(?:4|vier)\s*(?:tot|-|–)\s*(?:8|acht)\s*jaar/i],
@@ -50,6 +50,9 @@ export const SOURCES = [
   { name: 'Therapiepraktijk Zijn', type: 'links', employer: 'Therapiepraktijk Zijn', workplace: 'praktijk', url: 'https://therapiepraktijkzijn.nl/vacatures/', link: /\/vacatures\/[a-z0-9-]+\/?$/ },
   { name: 'Praktijk IkBen', type: 'watch', employer: 'Praktijk IkBen', workplace: 'praktijk', url: 'https://praktijkikben.nl/vacatures/', title: 'Dramatherapeut', mentions: /dramatherapeut/i },
   { name: 'Kind & meer', type: 'watch', employer: 'Kind & meer', workplace: 'praktijk', url: 'https://www.kindenmeer.nl/over-ons/vacatures/', title: 'Vaktherapeut', mentions: /dramatherapeut|vaktherapeut/i },
-  { name: 'Meesterbaan', type: 'links', url: 'https://www.meesterbaan.nl/vacatures/plaats/utrecht', link: /\/vacature\//i },
+  { name: 'YOEP', type: 'links', employer: 'YOEP', url: 'https://www.werkenbijyoep.nl/vacatures/', link: /\/vacatures\/[a-z0-9-]+\/?$/ },
+  { name: 'FamilySupporters', type: 'links', employer: 'FamilySupporters', url: 'https://familysupporters.nl/werken-bij/', link: /\/vacature\/[a-z0-9-]+\/?$/ },
+  { name: 'Care to Change', type: 'links', employer: 'Care to Change', url: 'https://caretochange.recruitee.com/', link: /^\/o\/[a-z0-9-]+\/?$/ },
+  { name: 'Spoor030', type: 'links', employer: 'Spoor030', workplace: 'jeugdzorg', url: 'https://spoor030.nl/werken-bij/', link: /\/berichten\/[a-z0-9-]+\/?$/ },
   { name: 'Zorgselect', type: 'sitemap', sitemaps: [1, 2, 3, 4, 5, 6].map((n) => `https://zorgselect.nl/sitemaps-1-section-position-1-sitemap-p${n}.xml`), link: /\/vacatures\// },
 ];
