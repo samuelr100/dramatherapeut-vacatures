@@ -1,0 +1,322 @@
+{
+ "updatedAt": "2026-11-02T21:34:07.466Z",
+ "sources": [
+  {
+   "name": "Altrecht",
+   "candidates": 5,
+   "jobs": 5,
+   "error": null
+  },
+  {
+   "name": "Eemhart",
+   "candidates": 0,
+   "jobs": 0,
+   "error": null
+  },
+  {
+   "name": "Youké",
+   "candidates": 0,
+   "jobs": 0,
+   "error": null
+  },
+  {
+   "name": "GGZ Vacatures",
+   "candidates": 13,
+   "jobs": 10,
+   "error": null
+  },
+  {
+   "name": "Therapiepraktijk Zijn",
+   "candidates": 2,
+   "jobs": 2,
+   "error": null
+  },
+  {
+   "name": "Praktijk IkBen",
+   "candidates": 0,
+   "jobs": 0,
+   "error": null
+  },
+  {
+   "name": "Kind & meer",
+   "candidates": 0,
+   "jobs": 0,
+   "error": null
+  },
+  {
+   "name": "Meesterbaan",
+   "candidates": 0,
+   "jobs": 0,
+   "error": null
+  },
+  {
+   "name": "Zorgselect",
+   "candidates": 13,
+   "jobs": 0,
+   "error": null
+  }
+ ],
+ "jobs": [
+  {
+   "id": "https://therapiepraktijkzijn.nl/vacatures/vacature-vaktherapeut/",
+   "url": "https://therapiepraktijkzijn.nl/vacatures/vacature-vaktherapeut/",
+   "title": "Vaktherapeut",
+   "employer": "Therapiepraktijk Zijn",
+   "source": "Therapiepraktijk Zijn",
+   "role": "core",
+   "place": "Eemnes",
+   "region": "iets verder",
+   "hours": {
+    "min": 20,
+    "max": 28
+   },
+   "deadline": null,
+   "audience": "kinderen",
+   "workplace": "praktijk",
+   "contract": "onbekend",
+   "score": 95,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://ggzvacatures.nl/vacature/oh-my-mood-utrecht-286-vaktherapeut/",
+   "url": "https://ggzvacatures.nl/vacature/oh-my-mood-utrecht-286-vaktherapeut/",
+   "title": "Vaktherapeut",
+   "employer": "Oh My Mood",
+   "source": "GGZ Vacatures",
+   "role": "core",
+   "place": "Utrecht",
+   "region": "dichtbij",
+   "hours": {
+    "min": 24,
+    "max": 36
+   },
+   "deadline": "2027-01-24",
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 75,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://ggzvacatures.nl/vacature/dramatherapeut-2/",
+   "url": "https://ggzvacatures.nl/vacature/dramatherapeut-2/",
+   "title": "Dramatherapeut",
+   "employer": "Care to Change Zeist",
+   "source": "GGZ Vacatures",
+   "role": "core",
+   "place": "Utrecht",
+   "region": "dichtbij",
+   "hours": {
+    "min": 24,
+    "max": 24
+   },
+   "deadline": "2026-12-12",
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 70,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://therapiepraktijkzijn.nl/vacatures/vacature-psychomotorisch-therapeut/",
+   "url": "https://therapiepraktijkzijn.nl/vacatures/vacature-psychomotorisch-therapeut/",
+   "title": "Psychomotorisch Therapeut",
+   "employer": "Therapiepraktijk Zijn",
+   "source": "Therapiepraktijk Zijn",
+   "role": "related",
+   "place": "Eemnes",
+   "region": "iets verder",
+   "hours": {
+    "min": 24,
+    "max": 32
+   },
+   "deadline": null,
+   "audience": "kinderen",
+   "workplace": "praktijk",
+   "contract": "onbekend",
+   "score": 60,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://www.werkenbijaltrecht.nl/vacatures/beeldend-therapeut/",
+   "url": "https://www.werkenbijaltrecht.nl/vacatures/beeldend-therapeut/",
+   "title": "Beeldend Therapeut",
+   "employer": "Altrecht",
+   "source": "Altrecht",
+   "role": "related",
+   "place": "Zeist",
+   "region": "dichtbij",
+   "hours": {
+    "min": 16,
+    "max": 32
+   },
+   "deadline": null,
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 35,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://www.werkenbijaltrecht.nl/vacatures/psychomotorisch-therapeut-1/",
+   "url": "https://www.werkenbijaltrecht.nl/vacatures/psychomotorisch-therapeut-1/",
+   "title": "Psychomotorisch Therapeut",
+   "employer": "Altrecht",
+   "source": "Altrecht",
+   "role": "related",
+   "place": "Woerden",
+   "region": "dichtbij",
+   "hours": {
+    "min": 36,
+    "max": 36
+   },
+   "deadline": null,
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 35,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://www.werkenbijaltrecht.nl/vacatures/psychomotorisch-therapeut-ggz-hic-1/",
+   "url": "https://www.werkenbijaltrecht.nl/vacatures/psychomotorisch-therapeut-ggz-hic-1/",
+   "title": "Psychomotorisch therapeut GGZ HIC",
+   "employer": "Altrecht",
+   "source": "Altrecht",
+   "role": "related",
+   "place": "Utrecht",
+   "region": "dichtbij",
+   "hours": {
+    "min": 36,
+    "max": 36
+   },
+   "deadline": null,
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 35,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://ggzvacatures.nl/vacature/oh-my-mood-286-psychomotorisch-therapeut/",
+   "url": "https://ggzvacatures.nl/vacature/oh-my-mood-286-psychomotorisch-therapeut/",
+   "title": "Psychomotorisch Therapeut",
+   "employer": "Oh My Mood",
+   "source": "GGZ Vacatures",
+   "role": "related",
+   "place": "Utrecht",
+   "region": "dichtbij",
+   "hours": {
+    "min": 24,
+    "max": 36
+   },
+   "deadline": "2027-01-27",
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 35,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://www.werkenbijaltrecht.nl/vacatures/beeldend-therapeut-persoonlijkheidsstoornissen-ambit-1/",
+   "url": "https://www.werkenbijaltrecht.nl/vacatures/beeldend-therapeut-persoonlijkheidsstoornissen-ambit-1/",
+   "title": "Beeldend Therapeut Persoonlijkheidsstoornissen AMBIT",
+   "employer": "Altrecht",
+   "source": "Altrecht",
+   "role": "related",
+   "place": "Zeist",
+   "region": "dichtbij",
+   "hours": {
+    "min": 16,
+    "max": 16
+   },
+   "deadline": null,
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 30,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://www.werkenbijaltrecht.nl/vacatures/vaktherapeut-beeldend-psychosomatiek-eikenboom-1/",
+   "url": "https://www.werkenbijaltrecht.nl/vacatures/vaktherapeut-beeldend-psychosomatiek-eikenboom-1/",
+   "title": "Vaktherapeut Beeldend – Psychosomatiek Eikenboom",
+   "employer": "Altrecht",
+   "source": "Altrecht",
+   "role": "related",
+   "place": "Zeist",
+   "region": "dichtbij",
+   "hours": {
+    "min": 24,
+    "max": 24
+   },
+   "deadline": null,
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 30,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://ggzvacatures.nl/vacature/oh-my-mood-venray-286-vaktherapeut/",
+   "url": "https://ggzvacatures.nl/vacature/oh-my-mood-venray-286-vaktherapeut/",
+   "title": "Vaktherapeut",
+   "employer": "Oh My Mood",
+   "source": "GGZ Vacatures",
+   "role": "core",
+   "place": "Limburg",
+   "region": "ver",
+   "hours": {
+    "min": 24,
+    "max": 36
+   },
+   "deadline": "2027-01-24",
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 25,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  },
+  {
+   "id": "https://ggzvacatures.nl/vacature/dramatherapeut-vervanging-zwangerschapsverlof/",
+   "url": "https://ggzvacatures.nl/vacature/dramatherapeut-vervanging-zwangerschapsverlof/",
+   "title": "Dramatherapeut (vervanging zwangerschapsverlof)",
+   "employer": "Fivoor",
+   "source": "GGZ Vacatures",
+   "role": "core",
+   "place": "Zuid-Holland",
+   "region": "ver",
+   "hours": null,
+   "deadline": "2026-11-29",
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 20,
+   "active": true,
+   "firstSeen": "2026-11-02T21:34:07.466Z",
+   "lastSeen": "2026-11-02T21:34:07.466Z"
+  }
+ ]
+}
