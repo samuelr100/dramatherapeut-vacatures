@@ -1,0 +1,54 @@
+name: Vacatures bijwerken
+
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vacatures
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Vacatures verzamelen
+        id: collect
+        run: node src/collect.mjs
+        env:
+          PAGE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+
+      - name: Resultaat opslaan
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/jobs.json
+          git diff --cached --quiet || git commit -m "Vacatures bijwerken"
+          git push
+
+      - name: Mail sturen bij nieuwe vacatures
+        if: steps.collect.outputs.new_count != '0' && env.MAIL_USERNAME != ''
+        uses: dawidd6/action-send-mail@v24
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: Vacaturezoeker <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.MAIL_TO }}
+          subject: "${{ steps.collect.outputs.new_count }} nieuwe vacature(s) dramatherapie"
+          html_body: file://out/mail.html

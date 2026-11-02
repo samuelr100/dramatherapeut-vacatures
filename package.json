@@ -1,0 +1,8 @@
+{
+  "name": "dramatherapeut-vacatures",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect": "node src/collect.mjs"
+  }
+}

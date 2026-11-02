@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Vacatures dramatherapie</title>
+<style>
+  :root {
+    --bg: #faf7f2; --card: #ffffff; --text: #2b2622; --muted: #6f665d; --line: #e6dfd5;
+    --accent: #a8432f; --accent-soft: #f7e6e0; --good: #2f6f57; --good-soft: #e1f0ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1917; --card: #272320; --text: #f2ece5; --muted: #ada39a; --line: #3b352f;
+      --accent: #ec9a84; --accent-soft: #46291f; --good: #8bd0b4; --good-soft: #1f3a30;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: .9rem; margin: 0 0 20px; }
+  .filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 12px; }
+  label.field { display: grid; gap: 3px; font-size: .8rem; color: var(--muted); }
+  select { width: 100%; min-height: 40px; padding: 6px 8px; font: inherit; color: var(--text); background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+  .checks { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 16px; }
+  .checks label { display: flex; align-items: center; gap: 7px; min-height: 32px; }
+  .count { font-size: .9rem; color: var(--muted); margin-bottom: 10px; }
+  .job { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 10px; }
+  .job.inactive { opacity: .6; }
+  .job h2 { font-size: 1.05rem; margin: 0 0 3px; overflow-wrap: anywhere; }
+  .job a { color: var(--accent); text-decoration: none; }
+  .job a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 8px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+  .tag { font-size: .76rem; padding: 2px 8px; border-radius: 99px; background: var(--bg); border: 1px solid var(--line); }
+  .tag.new { background: var(--accent-soft); color: var(--accent); border-color: transparent; font-weight: 600; }
+  .tag.fit { background: var(--good-soft); color: var(--good); border-color: transparent; }
+  .job select { width: auto; min-height: 36px; font-size: .88rem; }
+  .empty { padding: 28px 16px; text-align: center; color: var(--muted); background: var(--card); border: 1px dashed var(--line); border-radius: 12px; }
+  details { margin-top: 28px; color: var(--muted); font-size: .88rem; }
+  details ul { padding-left: 18px; }
+  .err { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Vacatures dramatherapie</h1>
+  <p class="sub" id="updated">Laden…</p>
+
+  <div class="filters">
+    <label class="field">Regio
+      <select id="region">
+        <option value="near">Utrecht en omgeving</option>
+        <option value="known">Ook onbekende locatie</option>
+        <option value="all">Heel Nederland</option>
+      </select>
+    </label>
+    <label class="field">Doelgroep
+      <select id="audience">
+        <option value="all">Alle</option>
+        <option value="young">Jonge kinderen</option>
+        <option value="kids">Kinderen</option>
+        <option value="youth">Kinderen en jongeren</option>
+      </select>
+    </label>
+    <label class="field">Status
+      <select id="status">
+        <option value="open">Alles behalve verborgen</option>
+        <option value="">Nog niet beoordeeld</option>
+        <option value="interessant">Interessant</option>
+        <option value="gesolliciteerd">Gesolliciteerd</option>
+        <option value="afgewezen">Afgewezen</option>
+        <option value="verborgen">Verborgen</option>
+      </select>
+    </label>
+  </div>
+  <div class="checks">
+    <label><input type="checkbox" id="related" checked> Verwante banen tonen</label>
+    <label><input type="checkbox" id="onlyNew"> Alleen nieuw (7 dagen)</label>
+    <label><input type="checkbox" id="zzp"> Alleen met zzp genoemd</label>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+
+  <details>
+    <summary>Bronnen van de laatste zoekronde</summary>
+    <ul id="sources"></ul>
+    <p>Indeed en LinkedIn zitten hier niet in. Daarvoor kun je het beste een zoekalert op die sites zelf instellen. De indeling naar regio, doelgroep en uren is automatisch afgeleid uit de tekst, dus controleer die in de vacature zelf.</p>
+  </details>
+</main>
+<script>
+const STATUS_KEY = 'vacature-status';
+const FILTER_KEY = 'vacature-filters';
+const STATUSES = ['', 'interessant', 'gesolliciteerd', 'afgewezen', 'verborgen'];
+const STATUS_LABEL = { '': 'Nog niet beoordeeld', interessant: 'Interessant', gesolliciteerd: 'Gesolliciteerd', afgewezen: 'Afgewezen', verborgen: 'Verbergen' };
+const SELECTS = ['region', 'audience', 'status'];
+const CHECKS = ['related', 'onlyNew', 'zzp'];
+const $ = (id) => document.getElementById(id);
+
+function load(key) {
+  try { return JSON.parse(localStorage.getItem(key)) || {}; } catch { return {}; }
+}
+function save(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* privévenster: werkt alleen niet blijvend */ }
+}
+
+const statuses = load(STATUS_KEY);
+let jobs = [];
+
+function matches(job) {
+  const region = $('region').value;
+  if (region === 'near' && !['dichtbij', 'iets verder'].includes(job.region)) return false;
+  if (region === 'known' && job.region === 'ver') return false;
+
+  const audience = $('audience').value;
+  if (audience === 'young' && job.audience !== 'jonge kinderen') return false;
+  if (audience === 'kids' && !['jonge kinderen', 'kinderen'].includes(job.audience)) return false;
+  if (audience === 'youth' && !['jonge kinderen', 'kinderen', 'jongeren'].includes(job.audience)) return false;
+
+  const status = statuses[job.id] || '';
+  const wanted = $('status').value;
+  if (wanted === 'open' ? status === 'verborgen' : status !== wanted) return false;
+
+  if (!$('related').checked && job.role === 'related') return false;
+  if ($('onlyNew').checked && !isNew(job)) return false;
+  if ($('zzp').checked && job.contract !== 'zzp mogelijk') return false;
+  return true;
+}
+
+const isNew = (job) => Date.now() - new Date(job.firstSeen).getTime() < 7 * 86400000;
+const hoursText = (h) => (!h ? null : h.min === h.max ? `${h.min} uur` : `${h.min}-${h.max} uur`);
+const dateText = (d) => new Date(d).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
+
+function tag(text, cls) {
+  const el = document.createElement('span');
+  el.className = `tag ${cls || ''}`;
+  el.textContent = text;
+  return el;
+}
+
+function card(job) {
+  const el = document.createElement('article');
+  el.className = `job${job.active ? '' : ' inactive'}`;
+
+  const h2 = document.createElement('h2');
+  const a = document.createElement('a');
+  a.href = job.url;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.textContent = job.title;
+  h2.append(a);
+
+  const meta = document.createElement('div');
+  meta.className = 'meta';
+  meta.textContent = [job.employer, job.place, hoursText(job.hours), job.deadline && `reageren tot ${dateText(job.deadline)}`].filter(Boolean).join(' · ');
+
+  const tags = document.createElement('div');
+  tags.className = 'tags';
+  if (isNew(job)) tags.append(tag('Nieuw', 'new'));
+  if (!job.active) tags.append(tag('Niet meer online'));
+  if (job.audience !== 'onbekend') tags.append(tag(job.audience, 'fit'));
+  if (job.workplace !== 'overig') tags.append(tag(job.workplace, job.workplace === 'praktijk' ? 'fit' : ''));
+  if (job.role === 'related') tags.append(tag('Verwant'));
+  if (job.contract === 'zzp mogelijk') tags.append(tag('zzp genoemd'));
+  tags.append(tag(`via ${job.source}`));
+
+  const select = document.createElement('select');
+  select.setAttribute('aria-label', `Status van ${job.title}`);
+  for (const s of STATUSES) select.add(new Option(STATUS_LABEL[s], s));
+  select.value = statuses[job.id] || '';
+  select.addEventListener('change', () => {
+    if (select.value) statuses[job.id] = select.value; else delete statuses[job.id];
+    save(STATUS_KEY, statuses);
+    render();
+  });
+
+  el.append(h2, meta, tags, select);
+  return el;
+}
+
+function render() {
+  const visible = jobs.filter(matches);
+  $('count').textContent = `${visible.length} van ${jobs.length} vacatures`;
+  const list = $('list');
+  list.replaceChildren(...visible.map(card));
+  if (!visible.length) {
+    const empty = document.createElement('div');
+    empty.className = 'empty';
+    empty.textContent = 'Geen vacatures met deze filters. Probeer een ruimere regio of doelgroep.';
+    list.append(empty);
+  }
+  const filters = {};
+  for (const id of SELECTS) filters[id] = $(id).value;
+  for (const id of CHECKS) filters[id] = $(id).checked;
+  save(FILTER_KEY, filters);
+}
+
+function restoreFilters() {
+  const saved = load(FILTER_KEY);
+  for (const id of SELECTS) if (saved[id] !== undefined) $(id).value = saved[id];
+  for (const id of CHECKS) if (saved[id] !== undefined) $(id).checked = saved[id];
+}
+
+async function start() {
+  restoreFilters();
+  for (const id of [...SELECTS, ...CHECKS]) $(id).addEventListener('change', render);
+  try {
+    const res = await fetch('jobs.json', { cache: 'no-cache' });
+    const data = await res.json();
+    jobs = data.jobs;
+    $('updated').textContent = `Bijgewerkt op ${new Date(data.updatedAt).toLocaleString('nl-NL', { dateStyle: 'long', timeStyle: 'short' })}`;
+    $('sources').replaceChildren(...data.sources.map((s) => {
+      const li = document.createElement('li');
+      li.textContent = s.error ? `${s.name}: niet gelukt` : `${s.name}: ${s.jobs} vacatures`;
+      if (s.error) li.className = 'err';
+      return li;
+    }));
+    render();
+  } catch {
+    $('updated').textContent = 'De vacatures konden niet geladen worden. Probeer het later opnieuw.';
+  }
+}
+start();
+</script>
+</body>
+</html>
