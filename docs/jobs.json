@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-03T14:21:58.854Z",
+ "updatedAt": "2026-11-04T14:38:24.144Z",
  "sources": [
   {
    "name": "Altrecht",
@@ -21,8 +21,8 @@
   },
   {
    "name": "GGZ Vacatures",
-   "candidates": 13,
-   "jobs": 10,
+   "candidates": 12,
+   "jobs": 9,
    "error": null
   },
   {
@@ -95,7 +95,7 @@
    "score": 95,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://ggzvacatures.nl/vacature/oh-my-mood-utrecht-286-vaktherapeut/",
@@ -117,29 +117,29 @@
    "score": 75,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
-   "id": "https://ggzvacatures.nl/vacature/dramatherapeut-2/",
-   "url": "https://ggzvacatures.nl/vacature/dramatherapeut-2/",
+   "id": "https://caretochange.recruitee.com/o/dramatherapeut-2",
+   "url": "https://caretochange.recruitee.com/o/dramatherapeut-2",
    "title": "Dramatherapeut",
-   "employer": "Care to Change Zeist",
-   "source": "GGZ Vacatures",
+   "employer": "Care to Change",
+   "source": "Care to Change",
    "role": "core",
-   "place": "Utrecht",
+   "place": "Zeist",
    "region": "dichtbij",
    "hours": {
     "min": 24,
     "max": 24
    },
-   "deadline": "2026-12-12",
+   "deadline": null,
    "audience": "onbekend",
    "workplace": "overig",
    "contract": "onbekend",
    "score": 70,
    "active": true,
-   "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "firstSeen": "2026-11-04T14:38:24.144Z",
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://therapiepraktijkzijn.nl/vacatures/vacature-psychomotorisch-therapeut/",
@@ -161,7 +161,7 @@
    "score": 60,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://www.werkenbijyoep.nl/vacatures/werkbegeleider-jeugdzorg-in-gouda/",
@@ -183,7 +183,7 @@
    "score": 50,
    "active": true,
    "firstSeen": "2026-11-03T10:21:14.605Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://caretochange.recruitee.com/o/beeldend-therapeut-3",
@@ -205,7 +205,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-03T10:21:14.605Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://caretochange.recruitee.com/o/psychomotorisch-therapeut-9",
@@ -227,7 +227,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-03T10:21:14.605Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://www.werkenbijaltrecht.nl/vacatures/beeldend-therapeut/",
@@ -249,7 +249,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://www.werkenbijaltrecht.nl/vacatures/psychomotorisch-therapeut-1/",
@@ -271,7 +271,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://www.werkenbijaltrecht.nl/vacatures/psychomotorisch-therapeut-ggz-hic-1/",
@@ -293,7 +293,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://ggzvacatures.nl/vacature/oh-my-mood-286-psychomotorisch-therapeut/",
@@ -315,7 +315,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://www.werkenbijaltrecht.nl/vacatures/beeldend-therapeut-persoonlijkheidsstoornissen-ambit-1/",
@@ -337,7 +337,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://www.werkenbijaltrecht.nl/vacatures/vaktherapeut-beeldend-psychosomatiek-eikenboom-1/",
@@ -359,7 +359,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://ggzvacatures.nl/vacature/oh-my-mood-venray-286-vaktherapeut/",
@@ -381,7 +381,7 @@
    "score": 25,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   },
   {
    "id": "https://ggzvacatures.nl/vacature/dramatherapeut-vervanging-zwangerschapsverlof/",
@@ -400,7 +400,7 @@
    "score": 20,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-03T14:21:58.854Z"
+   "lastSeen": "2026-11-04T14:38:24.144Z"
   }
  ]
 }
