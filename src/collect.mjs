@@ -1,7 +1,7 @@
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { setTimeout as sleep } from 'node:timers/promises';
-import { classifyRole, decode, findAudience, findContract, findDeadline, findHours, findRegion, findWorkplace, scoreJob, stripTags } from './analyze.mjs';
-import { CORE_ROLES, DROP_AFTER_DAYS, MAX_NEW_DETAILS_PER_RUN, RELATED_ROLES, REQUEST_DELAY_MS, SOURCES, USER_AGENT } from './config.mjs';
+import { classifyRole, decode, findAudience, findContract, findDeadline, distanceKm, findHours, findPlace, findWorkplace, scoreJob, stripTags } from './analyze.mjs';
+import { CORE_ROLES, DROP_AFTER_DAYS, MAIL_MAX_KM, MAX_NEW_DETAILS_PER_RUN, PROVINCES, RELATED_ROLES, REQUEST_DELAY_MS, SOURCES, USER_AGENT } from './config.mjs';
 
 const DATA_FILE = 'docs/jobs.json';
 const MAIL_FILE = 'out/mail.html';
@@ -62,8 +62,9 @@ async function politeFetch(url) {
 }
 
 const isExpired = (job) => Boolean(job.deadline) && job.deadline < now.slice(0, 10);
-// Op eerste woord van de werkgever en regio, want bronnen schrijven die verschillend (Altrecht / Altrecht TopGGz, Zeist / Utrecht).
-const dedupeKey = (job) => `${job.title.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim()}|${job.employer?.split(' ')[0].toLowerCase()}|${job.region}`;
+// Op eerste woord van de werkgever en grove afstand, want bronnen schrijven die verschillend (Altrecht / Altrecht TopGGz, Zeist / Utrecht).
+const dedupeKey = (job) => `${job.title.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim()}|${job.employer?.split(' ')[0].toLowerCase()}|${job.distanceKm == null ? job.place : Math.round(job.distanceKm / 25)}`;
+const withinMailRange = (job) => (job.distanceKm == null ? !PROVINCES.includes(job.place) : job.distanceKm <= MAIL_MAX_KM);
 const roleHint = (text) => CORE_ROLES.test(text) || RELATED_ROLES.test(text);
 const slugText = (url) => decodeURIComponent(new URL(url).pathname).replace(/[-_/]+/g, ' ');
 
@@ -140,7 +141,7 @@ async function readDetail(source, candidate) {
   const jsonPlace = [posting?.jobLocation].flat().map((l) => l?.address?.addressLocality).filter(Boolean).join(' ');
   const locationLabel = (`${candidate.teaser} ${text}`.match(/(?:Locatie|Standplaats|Werklocatie)\s*:?\s+([\p{Lu}][\p{L}' -]{2,40})/u) || [])[1];
   // De link gaat voor op het label: ketens plaatsen per vestiging een vacature, met de plaats in de link en alleen de provincie als label.
-  const { place, region } = findRegion([jsonPlace, slugText(candidate.url), title, locationLabel, text.slice(0, 1500)]);
+  const place = findPlace([jsonPlace, slugText(candidate.url), title, locationLabel, text.slice(0, 1500)]);
 
   const job = {
     id: candidate.url,
@@ -150,7 +151,7 @@ async function readDetail(source, candidate) {
     source: source.name,
     role,
     place,
-    region,
+    distanceKm: distanceKm(place),
     hours: findHours(`${candidate.teaser} ${text}`),
     deadline: posting?.validThrough?.slice(0, 10) || findDeadline(text),
     audience: findAudience(title, text),
@@ -158,8 +159,6 @@ async function readDetail(source, candidate) {
     contract: findContract(text),
   };
   if (isExpired(job)) return null;
-  // Verwante banen ver weg zijn ruis: die zou ze niet overwegen.
-  if (role === 'related' && region === 'ver') return null;
   return { ...job, score: scoreJob(job) };
 }
 
@@ -170,7 +169,7 @@ function loadPrevious() {
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 function mailHtml(newJobs) {
-  const rows = newJobs.map((j) => `<li style="margin-bottom:14px"><a href="${esc(j.url)}"><strong>${esc(j.title)}</strong></a><br>${esc([j.employer, j.place, j.role === 'related' ? 'verwant' : null].filter(Boolean).join(' · '))}</li>`).join('\n');
+  const rows = newJobs.map((j) => `<li style="margin-bottom:14px"><a href="${esc(j.url)}"><strong>${esc(j.title)}</strong></a><br>${esc([j.employer, j.place, j.distanceKm != null ? `± ${j.distanceKm} km` : null, j.role === 'related' ? 'verwant' : null].filter(Boolean).join(' · '))}</li>`).join('\n');
   const link = PAGE_URL ? `<p><a href="${esc(PAGE_URL)}">Bekijk alle vacatures</a></p>` : '';
   return `<!doctype html><html><head><meta charset="utf-8"></head><body style="font-family:sans-serif;line-height:1.45"><ul style="padding-left:18px">\n${rows}\n</ul>${link}</body></html>`;
 }
@@ -225,18 +224,32 @@ async function main() {
     jobs.set(old.id, failedSources.has(old.source) ? old : { ...old, active: false });
   }
 
-  // Bronnen staan op voorkeur in de config, dus de eerste (de werkgever zelf) blijft bij dubbele vacatures staan.
-  const unique = new Map();
-  for (const job of jobs.values()) if (!unique.has(dedupeKey(job))) unique.set(dedupeKey(job), job);
-  const list = [...unique.values()].sort((a, b) => b.score - a.score || b.firstSeen.localeCompare(a.firstSeen));
+  // Opnieuw berekenen, zodat aanpassingen in plaatsen of punten ook voor bestaande vacatures gelden.
+  for (const job of jobs.values()) {
+    delete job.region;
+    job.distanceKm = distanceKm(job.place);
+    job.score = scoreJob(job);
+  }
+
+  // Dubbele vacatures blijven bewaard maar gemarkeerd; anders lijken ze bij de volgende ronde weer nieuw.
+  // Voorrang: nog online, dan het eerst gezien, dan de volgorde van de bronnen in de config.
+  const byPriority = [...jobs.values()].sort((a, b) => b.active - a.active || a.firstSeen.localeCompare(b.firstSeen));
+  const keepers = new Map();
+  for (const job of byPriority) {
+    const key = dedupeKey(job);
+    if (!keepers.has(key)) keepers.set(key, job);
+    job.duplicate = keepers.get(key) !== job;
+  }
+  const list = [...jobs.values()].sort((a, b) => b.score - a.score || b.firstSeen.localeCompare(a.firstSeen));
+  const shown = list.filter((j) => !j.duplicate);
   mkdirSync('docs', { recursive: true });
   writeFileSync(DATA_FILE, `${JSON.stringify({ updatedAt: now, sources: sourceReports, jobs: list }, null, 1)}\n`);
 
-  const newJobs = list.filter((j) => j.firstSeen === now && j.region !== 'ver');
+  const newJobs = shown.filter((j) => j.firstSeen === now && withinMailRange(j));
   mkdirSync('out', { recursive: true });
   writeFileSync(MAIL_FILE, mailHtml(newJobs));
   setOutput('new_count', newJobs.length);
-  console.log(`Totaal ${list.length} vacatures, ${newJobs.length} nieuw voor de mail.`);
+  console.log(`Totaal ${shown.length} vacatures, ${newJobs.length} nieuw voor de mail.`);
   if (sourceReports.every((r) => r.error)) process.exit(1);
 }
 

@@ -53,10 +53,13 @@
   <p class="sub" id="updated">Laden…</p>
 
   <div class="filters">
-    <label class="field">Regio
-      <select id="region">
-        <option value="near">Utrecht en omgeving</option>
-        <option value="known">Ook onbekende locatie</option>
+    <label class="field">Afstand vanaf Utrecht
+      <select id="distance">
+        <option value="15">Tot 15 km</option>
+        <option value="30">Tot 30 km</option>
+        <option value="50" selected>Tot 50 km</option>
+        <option value="75">Tot 75 km</option>
+        <option value="100">Tot 100 km</option>
         <option value="all">Heel Nederland</option>
       </select>
     </label>
@@ -81,6 +84,7 @@
   </div>
   <div class="checks">
     <label><input type="checkbox" id="related" checked> Verwante banen tonen</label>
+    <label><input type="checkbox" id="unknownPlace" checked> Ook met onbekende afstand</label>
     <label><input type="checkbox" id="onlyNew"> Alleen nieuw (7 dagen)</label>
     <label><input type="checkbox" id="zzp"> Alleen met zzp genoemd</label>
   </div>
@@ -91,7 +95,7 @@
   <details>
     <summary>Bronnen van de laatste zoekronde</summary>
     <ul id="sources"></ul>
-    <p>Indeed en LinkedIn zitten hier niet in. Daarvoor kun je het beste een zoekalert op die sites zelf instellen. De indeling naar regio, doelgroep en uren is automatisch afgeleid uit de tekst, dus controleer die in de vacature zelf.</p>
+    <p>Indeed en LinkedIn zitten hier niet in. Daarvoor kun je het beste een zoekalert op die sites zelf instellen. Plaats, doelgroep en uren zijn automatisch afgeleid uit de tekst, dus controleer die in de vacature zelf. De afstand is hemelsbreed vanaf Utrecht Centraal; de reistijd kan flink afwijken.</p>
   </details>
 </main>
 <script>
@@ -99,8 +103,8 @@ const STATUS_KEY = 'vacature-status';
 const FILTER_KEY = 'vacature-filters';
 const STATUSES = ['', 'interessant', 'gesolliciteerd', 'afgewezen', 'verborgen'];
 const STATUS_LABEL = { '': 'Nog niet beoordeeld', interessant: 'Interessant', gesolliciteerd: 'Gesolliciteerd', afgewezen: 'Afgewezen', verborgen: 'Verbergen' };
-const SELECTS = ['region', 'audience', 'status'];
-const CHECKS = ['related', 'onlyNew', 'zzp'];
+const SELECTS = ['distance', 'audience', 'status'];
+const CHECKS = ['related', 'unknownPlace', 'onlyNew', 'zzp'];
 const $ = (id) => document.getElementById(id);
 
 function load(key) {
@@ -114,9 +118,11 @@ const statuses = load(STATUS_KEY);
 let jobs = [];
 
 function matches(job) {
-  const region = $('region').value;
-  if (region === 'near' && !['dichtbij', 'iets verder'].includes(job.region)) return false;
-  if (region === 'known' && job.region === 'ver') return false;
+  if (job.distanceKm == null) {
+    if (!$('unknownPlace').checked) return false;
+  } else if ($('distance').value !== 'all' && job.distanceKm > Number($('distance').value)) {
+    return false;
+  }
 
   const audience = $('audience').value;
   if (audience === 'young' && job.audience !== 'jonge kinderen') return false;
@@ -158,7 +164,8 @@ function card(job) {
 
   const meta = document.createElement('div');
   meta.className = 'meta';
-  meta.textContent = [job.employer, job.place, hoursText(job.hours), job.deadline && `reageren tot ${dateText(job.deadline)}`].filter(Boolean).join(' · ');
+  const where = job.place && (job.distanceKm != null ? `${job.place} (± ${job.distanceKm} km)` : job.place);
+  meta.textContent = [job.employer, where, hoursText(job.hours), job.deadline && `reageren tot ${dateText(job.deadline)}`].filter(Boolean).join(' · ');
 
   const tags = document.createElement('div');
   tags.className = 'tags';
@@ -192,7 +199,7 @@ function render() {
   if (!visible.length) {
     const empty = document.createElement('div');
     empty.className = 'empty';
-    empty.textContent = 'Geen vacatures met deze filters. Probeer een ruimere regio of doelgroep.';
+    empty.textContent = 'Geen vacatures met deze filters. Probeer een grotere afstand of een andere doelgroep.';
     list.append(empty);
   }
   const filters = {};
@@ -213,7 +220,7 @@ async function start() {
   try {
     const res = await fetch('jobs.json', { cache: 'no-cache' });
     const data = await res.json();
-    jobs = data.jobs;
+    jobs = data.jobs.filter((j) => !j.duplicate);
     $('updated').textContent = `Bijgewerkt op ${new Date(data.updatedAt).toLocaleString('nl-NL', { dateStyle: 'long', timeStyle: 'short' })}`;
     $('sources').replaceChildren(...data.sources.map((s) => {
       const li = document.createElement('li');

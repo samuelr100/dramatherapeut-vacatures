@@ -1,4 +1,4 @@
-import { AUDIENCE_RULES, CORE_ROLES, OTHER_SPECIALISM, PLACES_FAR, PLACES_NEAR, PLACES_WIDER, RELATED_ROLES, SCORES, WANTED_HOURS, WORKPLACE_RULES } from './config.mjs';
+import { AUDIENCE_RULES, CORE_ROLES, HOME, OTHER_SPECIALISM, PLACES, PROVINCES, RELATED_ROLES, SCORES, WANTED_HOURS, WORKPLACE_RULES } from './config.mjs';
 
 const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', ndash: '–', mdash: '—', euml: 'ë', eacute: 'é', iuml: 'ï' };
 export const decode = (s) => s
@@ -17,19 +17,29 @@ export function classifyRole(title) {
 }
 
 const hasPlace = (text, place) => new RegExp(`(?<![\\p{L}-])${place.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}-])`, 'u').test(text);
-const findPlace = (text, places) => places.find((p) => hasPlace(text, p));
 
-// De meest betrouwbare tekst eerst; de lopende tekst noemt vaak ook andere plaatsen.
-export function findRegion(texts) {
-  for (const text of texts.filter(Boolean)) {
-    const near = findPlace(text, PLACES_NEAR);
-    if (near) return { place: near, region: 'dichtbij' };
-    const wider = findPlace(text, PLACES_WIDER);
-    if (wider) return { place: wider, region: 'iets verder' };
-    const far = findPlace(text, PLACES_FAR);
-    if (far) return { place: far, region: 'ver' };
+export function distanceKm(place) {
+  const coords = PLACES[place];
+  if (!coords) return null;
+  const rad = (d) => (d * Math.PI) / 180;
+  const [lat1, lon1] = HOME.map(rad);
+  const [lat2, lon2] = coords.map(rad);
+  const a = Math.sin((lat2 - lat1) / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin((lon2 - lon1) / 2) ** 2;
+  return Math.round(2 * 6371 * Math.asin(Math.sqrt(a)));
+}
+
+// De meest betrouwbare tekst eerst. Noemt een tekst meerdere plaatsen (zoals een keten met vestigingen), dan telt de dichtstbijzijnde.
+export function findPlace(texts) {
+  const present = texts.filter(Boolean);
+  for (const text of present) {
+    const found = Object.keys(PLACES).filter((p) => hasPlace(text, p));
+    if (found.length) return found.sort((a, b) => distanceKm(a) - distanceKm(b))[0];
   }
-  return { place: null, region: 'onbekend' };
+  for (const text of present) {
+    const province = PROVINCES.find((p) => hasPlace(text, p));
+    if (province) return province;
+  }
+  return null;
 }
 
 export function findHours(text) {
@@ -69,7 +79,10 @@ export function findWorkplace(title, text) {
 export const findContract = (text) => (/\b(?:zzp|freelance|zelfstandige basis|zelfstandig ondernemer)\b/i.test(text) ? 'zzp mogelijk' : 'onbekend');
 
 export function scoreJob(job) {
-  let score = SCORES.role[job.role] + SCORES.audience[job.audience] + SCORES.region[job.region] + SCORES.workplace[job.workplace];
+  const distanceScore = job.distanceKm != null
+    ? SCORES.distance.find(([max]) => job.distanceKm <= max)[1]
+    : PROVINCES.includes(job.place) ? SCORES.provinceOnly : 0;
+  let score = SCORES.role[job.role] + SCORES.audience[job.audience] + distanceScore + SCORES.workplace[job.workplace];
   if (job.hours && job.hours.max >= WANTED_HOURS.min && job.hours.min <= WANTED_HOURS.max) score += SCORES.hoursMatch;
   return score;
 }
