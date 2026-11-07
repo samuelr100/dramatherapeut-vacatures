@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-06T14:20:55.027Z",
+ "updatedAt": "2026-11-07T13:08:06.024Z",
  "sources": [
   {
    "name": "Altrecht",
@@ -106,7 +106,7 @@
    "score": 95,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 21,
    "duplicate": false
   },
@@ -153,7 +153,7 @@
    "score": 70,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": true
   },
   {
@@ -175,7 +175,7 @@
    "score": 70,
    "active": true,
    "firstSeen": "2026-11-04T14:38:24.144Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -199,7 +199,7 @@
    "score": 65,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -221,7 +221,7 @@
    "score": 60,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 21,
    "duplicate": false
   },
@@ -245,7 +245,7 @@
    "score": 50,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -267,7 +267,7 @@
    "score": 50,
    "active": true,
    "firstSeen": "2026-11-03T10:21:14.605Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 29,
    "duplicate": false
   },
@@ -290,7 +290,7 @@
    "score": 45,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": null,
    "duplicate": false
   },
@@ -314,7 +314,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -337,7 +337,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -360,7 +360,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -383,7 +383,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -402,7 +402,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": null,
    "duplicate": false
   },
@@ -425,7 +425,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-03T10:21:14.605Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -448,7 +448,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-03T10:21:14.605Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -471,7 +471,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -494,7 +494,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 16,
    "duplicate": false
   },
@@ -517,7 +517,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 1,
    "duplicate": false
   },
@@ -564,7 +564,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": true
   },
   {
@@ -586,7 +586,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -609,7 +609,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -633,7 +633,7 @@
    "score": 10,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -656,7 +656,7 @@
    "score": 10,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -679,7 +679,7 @@
    "score": 5,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -702,7 +702,7 @@
    "score": 5,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -725,7 +725,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -748,7 +748,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   },
   {
@@ -771,7 +771,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-06T14:20:55.027Z",
+   "lastSeen": "2026-11-07T13:08:06.024Z",
    "duplicate": false
   }
  ]
