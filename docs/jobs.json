@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T14:56:51.651Z",
+ "updatedAt": "2026-11-11T14:27:41.163Z",
  "sources": [
   {
    "name": "Altrecht",
@@ -81,7 +81,7 @@
   },
   {
    "name": "Zorgselect",
-   "candidates": 11,
+   "candidates": 13,
    "jobs": 0,
    "error": null
   }
@@ -106,7 +106,7 @@
    "score": 95,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": 21,
    "duplicate": false
   },
@@ -130,7 +130,7 @@
    "score": 90,
    "active": true,
    "firstSeen": "2026-11-10T14:56:51.651Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -176,7 +176,7 @@
    "score": 70,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -222,7 +222,7 @@
    "score": 65,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -244,7 +244,7 @@
    "score": 60,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": 21,
    "duplicate": false
   },
@@ -268,7 +268,7 @@
    "score": 55,
    "active": true,
    "firstSeen": "2026-11-10T14:56:51.651Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -291,7 +291,7 @@
    "score": 50,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -313,7 +313,7 @@
    "score": 50,
    "active": true,
    "firstSeen": "2026-11-03T10:21:14.605Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": 29,
    "duplicate": false
   },
@@ -336,77 +336,8 @@
    "score": 45,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": null,
-   "duplicate": false
-  },
-  {
-   "id": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-drama-pmt-dansbeweging-1330713/",
-   "url": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-drama-pmt-dansbeweging-1330713/",
-   "title": "Vaktherapeut Drama/PMT/Dans&Beweging",
-   "employer": "De Viersprong",
-   "source": "De Viersprong",
-   "role": "core",
-   "place": "Bergen op Zoom",
-   "distanceKm": 87,
-   "hours": {
-    "min": 36,
-    "max": 36
-   },
-   "deadline": null,
-   "audience": "onbekend",
-   "workplace": "overig",
-   "contract": "onbekend",
-   "score": 40,
-   "active": true,
-   "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
-   "duplicate": false
-  },
-  {
-   "id": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-gdgs-1334729/",
-   "url": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-gdgs-1334729/",
-   "title": "Vaktherapeut – GDGS",
-   "employer": "De Viersprong",
-   "source": "De Viersprong",
-   "role": "core",
-   "place": "Halsteren",
-   "distanceKm": 85,
-   "hours": {
-    "min": 36,
-    "max": 36
-   },
-   "deadline": null,
-   "audience": "onbekend",
-   "workplace": "overig",
-   "contract": "onbekend",
-   "score": 40,
-   "active": true,
-   "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
-   "duplicate": false
-  },
-  {
-   "id": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-1330411/",
-   "url": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-1330411/",
-   "title": "Vaktherapeut",
-   "employer": "De Viersprong",
-   "source": "De Viersprong",
-   "role": "core",
-   "place": "Halsteren",
-   "distanceKm": 85,
-   "hours": {
-    "min": 28,
-    "max": 32
-   },
-   "deadline": null,
-   "audience": "onbekend",
-   "workplace": "overig",
-   "contract": "onbekend",
-   "score": 40,
-   "active": true,
-   "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
    "duplicate": false
   },
   {
@@ -429,7 +360,76 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "duplicate": false
+  },
+  {
+   "id": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-drama-pmt-dansbeweging-1330713/",
+   "url": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-drama-pmt-dansbeweging-1330713/",
+   "title": "Vaktherapeut Drama/PMT/Dans&Beweging",
+   "employer": "De Viersprong",
+   "source": "De Viersprong",
+   "role": "core",
+   "place": "Bergen op Zoom",
+   "distanceKm": 87,
+   "hours": {
+    "min": 36,
+    "max": 36
+   },
+   "deadline": null,
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 40,
+   "active": true,
+   "firstSeen": "2026-11-05T14:42:40.994Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "duplicate": false
+  },
+  {
+   "id": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-gdgs-1334729/",
+   "url": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-gdgs-1334729/",
+   "title": "Vaktherapeut – GDGS",
+   "employer": "De Viersprong",
+   "source": "De Viersprong",
+   "role": "core",
+   "place": "Halsteren",
+   "distanceKm": 85,
+   "hours": {
+    "min": 36,
+    "max": 36
+   },
+   "deadline": null,
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 40,
+   "active": true,
+   "firstSeen": "2026-11-05T14:42:40.994Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "duplicate": false
+  },
+  {
+   "id": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-1330411/",
+   "url": "https://www.werkenbijdeviersprong.nl/vacature/vaktherapeut-1330411/",
+   "title": "Vaktherapeut",
+   "employer": "De Viersprong",
+   "source": "De Viersprong",
+   "role": "core",
+   "place": "Halsteren",
+   "distanceKm": 85,
+   "hours": {
+    "min": 28,
+    "max": 32
+   },
+   "deadline": null,
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 40,
+   "active": true,
+   "firstSeen": "2026-11-05T14:42:40.994Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -448,7 +448,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": null,
    "duplicate": false
   },
@@ -517,7 +517,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -540,7 +540,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": 16,
    "duplicate": false
   },
@@ -563,7 +563,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": 1,
    "duplicate": false
   },
@@ -610,7 +610,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": true
   },
   {
@@ -632,7 +632,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -655,7 +655,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -679,7 +679,7 @@
    "score": 10,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -702,7 +702,7 @@
    "score": 10,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -725,7 +725,7 @@
    "score": 5,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -748,7 +748,7 @@
    "score": 5,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -771,7 +771,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -794,7 +794,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   },
   {
@@ -817,7 +817,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-10T14:56:51.651Z",
+   "lastSeen": "2026-11-11T14:27:41.163Z",
    "duplicate": false
   }
  ]
