@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T14:27:41.163Z",
+ "updatedAt": "2026-11-12T15:19:44.860Z",
  "sources": [
   {
    "name": "Altrecht",
@@ -21,8 +21,8 @@
   },
   {
    "name": "GGZ Vacatures",
-   "candidates": 10,
-   "jobs": 10,
+   "candidates": 11,
+   "jobs": 11,
    "error": null
   },
   {
@@ -45,8 +45,8 @@
   },
   {
    "name": "YOEP",
-   "candidates": 3,
-   "jobs": 3,
+   "candidates": 2,
+   "jobs": 2,
    "error": null
   },
   {
@@ -106,7 +106,7 @@
    "score": 95,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "distanceKm": 21,
    "duplicate": false
   },
@@ -130,7 +130,7 @@
    "score": 90,
    "active": true,
    "firstSeen": "2026-11-10T14:56:51.651Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -176,7 +176,7 @@
    "score": 70,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -222,7 +222,7 @@
    "score": 65,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -244,7 +244,7 @@
    "score": 60,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "distanceKm": 21,
    "duplicate": false
   },
@@ -268,7 +268,7 @@
    "score": 55,
    "active": true,
    "firstSeen": "2026-11-10T14:56:51.651Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -291,7 +291,7 @@
    "score": 50,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -311,7 +311,7 @@
    "workplace": "jeugdzorg",
    "contract": "onbekend",
    "score": 50,
-   "active": true,
+   "active": false,
    "firstSeen": "2026-11-03T10:21:14.605Z",
    "lastSeen": "2026-11-11T14:27:41.163Z",
    "distanceKm": 29,
@@ -336,7 +336,7 @@
    "score": 45,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "distanceKm": null,
    "duplicate": false
   },
@@ -360,7 +360,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -383,7 +383,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -406,7 +406,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -429,7 +429,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -448,7 +448,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "distanceKm": null,
    "duplicate": false
   },
@@ -517,7 +517,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -540,7 +540,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "distanceKm": 16,
    "duplicate": false
   },
@@ -563,7 +563,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "distanceKm": 1,
    "duplicate": false
   },
@@ -610,7 +610,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": true
   },
   {
@@ -632,7 +632,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -655,8 +655,31 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "distanceKm": 8,
+   "duplicate": false
+  },
+  {
+   "id": "https://ggzvacatures.nl/vacature/senior-vaktherapeut-pmt/",
+   "url": "https://ggzvacatures.nl/vacature/senior-vaktherapeut-pmt/",
+   "title": "Senior Vaktherapeut PMT",
+   "employer": "GGZ Breburg",
+   "source": "GGZ Vacatures",
+   "role": "related",
+   "place": "Breda",
+   "distanceKm": 60,
+   "hours": {
+    "min": 36,
+    "max": 36
+   },
+   "deadline": "2027-01-30",
+   "audience": "onbekend",
+   "workplace": "overig",
+   "contract": "onbekend",
+   "score": 15,
+   "active": true,
+   "firstSeen": "2026-11-12T15:19:44.860Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -679,7 +702,7 @@
    "score": 10,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -702,7 +725,7 @@
    "score": 10,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -725,7 +748,7 @@
    "score": 5,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -748,7 +771,7 @@
    "score": 5,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -771,7 +794,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -794,7 +817,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   },
   {
@@ -817,7 +840,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-11T14:27:41.163Z",
+   "lastSeen": "2026-11-12T15:19:44.860Z",
    "duplicate": false
   }
  ]
