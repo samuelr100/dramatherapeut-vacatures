@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-15T13:58:41.088Z",
+ "updatedAt": "2026-11-16T15:52:51.856Z",
  "sources": [
   {
    "name": "Altrecht",
@@ -27,8 +27,8 @@
   },
   {
    "name": "Therapiepraktijk Zijn",
-   "candidates": 0,
-   "jobs": 0,
+   "candidates": 2,
+   "jobs": 2,
    "error": null
   },
   {
@@ -39,14 +39,14 @@
   },
   {
    "name": "Kind & meer",
-   "candidates": 0,
-   "jobs": 0,
-   "error": "fetch failed"
+   "candidates": 1,
+   "jobs": 1,
+   "error": null
   },
   {
    "name": "YOEP",
-   "candidates": 2,
-   "jobs": 2,
+   "candidates": 1,
+   "jobs": 1,
    "error": null
   },
   {
@@ -81,7 +81,7 @@
   },
   {
    "name": "Zorgselect",
-   "candidates": 16,
+   "candidates": 15,
    "jobs": 0,
    "error": null
   }
@@ -104,9 +104,9 @@
    "workplace": "praktijk",
    "contract": "onbekend",
    "score": 95,
-   "active": false,
+   "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-14T13:36:12.733Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "distanceKm": 21,
    "duplicate": false
   },
@@ -130,7 +130,7 @@
    "score": 90,
    "active": true,
    "firstSeen": "2026-11-10T14:56:51.651Z",
-   "lastSeen": "2026-11-14T13:36:12.733Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -176,7 +176,7 @@
    "score": 70,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -222,7 +222,7 @@
    "score": 65,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -242,9 +242,9 @@
    "workplace": "praktijk",
    "contract": "onbekend",
    "score": 60,
-   "active": false,
+   "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-14T13:36:12.733Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "distanceKm": 21,
    "duplicate": false
   },
@@ -268,7 +268,7 @@
    "score": 55,
    "active": true,
    "firstSeen": "2026-11-10T14:56:51.651Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -289,7 +289,7 @@
    "workplace": "jeugdzorg",
    "contract": "zzp mogelijk",
    "score": 50,
-   "active": true,
+   "active": false,
    "firstSeen": "2026-11-05T14:42:40.994Z",
    "lastSeen": "2026-11-15T13:58:41.088Z",
    "duplicate": false
@@ -336,7 +336,7 @@
    "score": 45,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "distanceKm": null,
    "duplicate": false
   },
@@ -360,7 +360,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -383,7 +383,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -406,7 +406,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -429,7 +429,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -448,7 +448,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "distanceKm": null,
    "duplicate": false
   },
@@ -517,7 +517,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -540,7 +540,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "distanceKm": 16,
    "duplicate": false
   },
@@ -563,7 +563,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "distanceKm": 1,
    "duplicate": false
   },
@@ -610,7 +610,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": true
   },
   {
@@ -632,7 +632,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -655,7 +655,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -679,7 +679,7 @@
    "score": 15,
    "active": true,
    "firstSeen": "2026-11-12T15:19:44.860Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -702,7 +702,7 @@
    "score": 10,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -725,7 +725,7 @@
    "score": 10,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -748,7 +748,7 @@
    "score": 5,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -771,7 +771,7 @@
    "score": 5,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -794,7 +794,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -817,7 +817,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   },
   {
@@ -840,7 +840,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-15T13:58:41.088Z",
+   "lastSeen": "2026-11-16T15:52:51.856Z",
    "duplicate": false
   }
  ]
