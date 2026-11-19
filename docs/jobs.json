@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T15:43:21.547Z",
+ "updatedAt": "2026-11-19T15:49:05.262Z",
  "sources": [
   {
    "name": "Altrecht",
@@ -81,7 +81,7 @@
   },
   {
    "name": "Zorgselect",
-   "candidates": 15,
+   "candidates": 14,
    "jobs": 0,
    "error": null
   }
@@ -106,7 +106,7 @@
    "score": 95,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "distanceKm": 21,
    "duplicate": false
   },
@@ -130,7 +130,7 @@
    "score": 90,
    "active": true,
    "firstSeen": "2026-11-10T14:56:51.651Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -173,7 +173,7 @@
    "score": 70,
    "active": true,
    "firstSeen": "2026-11-17T16:04:57.886Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -196,7 +196,7 @@
    "score": 70,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -242,7 +242,7 @@
    "score": 65,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -264,7 +264,7 @@
    "score": 60,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "distanceKm": 21,
    "duplicate": false
   },
@@ -288,7 +288,7 @@
    "score": 55,
    "active": true,
    "firstSeen": "2026-11-10T14:56:51.651Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -311,7 +311,7 @@
    "score": 50,
    "active": true,
    "firstSeen": "2026-11-17T16:04:57.886Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -379,7 +379,7 @@
    "score": 45,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "distanceKm": null,
    "duplicate": false
   },
@@ -403,7 +403,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -426,7 +426,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -449,7 +449,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -472,7 +472,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -491,7 +491,7 @@
    "score": 40,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "distanceKm": null,
    "duplicate": false
   },
@@ -560,7 +560,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -583,7 +583,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "distanceKm": 16,
    "duplicate": false
   },
@@ -606,7 +606,7 @@
    "score": 35,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "distanceKm": 1,
    "duplicate": false
   },
@@ -653,7 +653,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -675,7 +675,7 @@
    "score": 30,
    "active": true,
    "firstSeen": "2026-11-02T21:34:07.466Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "distanceKm": 8,
    "duplicate": false
   },
@@ -722,7 +722,7 @@
    "score": 15,
    "active": true,
    "firstSeen": "2026-11-12T15:19:44.860Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -745,7 +745,7 @@
    "score": 10,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -791,7 +791,7 @@
    "score": 5,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -814,7 +814,7 @@
    "score": 5,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -837,7 +837,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -860,7 +860,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   },
   {
@@ -883,7 +883,7 @@
    "score": 0,
    "active": true,
    "firstSeen": "2026-11-05T14:42:40.994Z",
-   "lastSeen": "2026-11-18T15:43:21.547Z",
+   "lastSeen": "2026-11-19T15:49:05.262Z",
    "duplicate": false
   }
  ]
